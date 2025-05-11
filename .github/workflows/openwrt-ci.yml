@@ -26,6 +26,11 @@ jobs:
     name: Build OpenWrt Firmware
 
     runs-on: ubuntu-latest
+- name: Upload artifact
+  uses: actions/upload-artifact@v4
+  with:
+    name: your-artifact
+    path: path/to/files
 
     steps:
       - name: Space cleanup and Initialization environment
